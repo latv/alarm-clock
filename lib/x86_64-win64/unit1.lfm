@@ -1,0 +1,127 @@
+object Form1: TForm1
+  Left = 497
+  Height = 510
+  Top = 223
+  Width = 706
+  Caption = 'Form1'
+  ClientHeight = 510
+  ClientWidth = 706
+  DesignTimePPI = 120
+  OnCreate = FormCreate
+  LCLVersion = '2.0.10.0'
+  object Label1: TLabel
+    Left = 70
+    Height = 106
+    Top = 120
+    Width = 292
+    Caption = '00:01:00'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -80
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Button1: TButton
+    Left = 528
+    Height = 52
+    Top = 152
+    Width = 168
+    Caption = 'Set alarm clock'
+    OnClick = Button1Click
+    ParentFont = False
+    TabOrder = 0
+  end
+  object Button4: TButton
+    Left = 100
+    Height = 39
+    Top = 70
+    Width = 39
+    Caption = '^'
+    OnClick = Button4Click
+    ParentFont = False
+    TabOrder = 1
+  end
+  object Button5: TButton
+    Left = 200
+    Height = 39
+    Top = 70
+    Width = 39
+    Caption = '^'
+    OnClick = Button5Click
+    ParentFont = False
+    TabOrder = 2
+  end
+  object Button6: TButton
+    Left = 300
+    Height = 39
+    Top = 68
+    Width = 39
+    Caption = '^'
+    OnClick = Button6Click
+    ParentFont = False
+    TabOrder = 3
+  end
+  object Button8: TButton
+    Left = 100
+    Height = 39
+    Top = 250
+    Width = 39
+    Caption = 'v'
+    OnClick = Button8Click
+    ParentFont = False
+    TabOrder = 4
+  end
+  object Button9: TButton
+    Left = 200
+    Height = 39
+    Top = 250
+    Width = 39
+    Caption = 'v'
+    OnClick = Button9Click
+    ParentFont = False
+    TabOrder = 5
+  end
+  object Button10: TButton
+    Left = 300
+    Height = 39
+    Top = 250
+    Width = 39
+    Caption = 'v'
+    OnClick = Button10Click
+    ParentFont = False
+    TabOrder = 6
+  end
+  object Label2: TLabel
+    Left = 144
+    Height = 1
+    Top = 375
+    Width = 1
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 114
+    Height = 20
+    Top = 335
+    Width = 176
+    Caption = 'set alarm clock to show up'
+    ParentColor = False
+  end
+  object Edit1: TEdit
+    Left = 384
+    Height = 28
+    Top = 167
+    Width = 119
+    TabOrder = 7
+    Text = 'Alarm clock'
+  end
+  object Timer1: TTimer
+    Enabled = False
+    Interval = 10
+    OnTimer = Timer1Timer
+    Left = 500
+    Top = 20
+  end
+end
